@@ -1,12 +1,941 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta name="generator" content="Hugo 0.114.1"><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta http-equiv="Accept-CH" content="DPR, Viewport-Width, Width">
+<link rel="icon" href=/fav.png type="image/gif">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+  <link
+          href="https://fonts.googleapis.com/css2?family=Alata&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+</noscript>
+
+
+<link rel="stylesheet" href="/css/font.css" media="all">
+
+
+
+<meta property="og:title" content="Profile" />
+<meta property="og:description" content="Text about my cool site" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://www.shashwath.me/" /><meta property="og:site_name" content="Profile" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Profile"/>
+<meta name="twitter:description" content="Text about my cool site"/>
+
+
+<link rel="stylesheet" href="/bootstrap-5/css/bootstrap.min.css" media="all"><link rel="stylesheet" href="/css/header.css" media="all">
+<link rel="stylesheet" href="/css/footer.css" media="all">
+
+
+<link rel="stylesheet" href="/css/theme.css" media="all">
+
+
+
+
+<style>
+    :root {
+        --text-color: #343a40;
+        --text-secondary-color: #6c757d;
+        --background-color: #eaedf0;
+        --secondary-background-color: #64ffda1a;
+        --primary-color: #007bff;
+        --secondary-color: #f8f9fa;
+
+         
+        --text-color-dark: #e4e6eb;
+        --text-secondary-color-dark: #b0b3b8;
+        --background-color-dark: #18191a;
+        --secondary-background-color-dark: #212529;
+        --primary-color-dark: #ffffff;
+        --secondary-color-dark: #212529;
+    }
+    body {
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-align: left;
+    }
+
+    html {
+        background-color: var(--background-color) !important;
+    }
+
+    body::-webkit-scrollbar {
+        width: .5em;
+        height: .5em;
+        background-color: var(--background-color);
+    }
+    
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px var(--background-color);
+        border-radius: 1rem;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        outline: 1px solid var(--background-color);
+    }
+
+    #search-content::-webkit-scrollbar {
+        width: .5em;
+        height: .1em;
+        background-color: var(--background-color);
+    }
+</style>
+
+<meta name="description" content=Text&#32;about&#32;my&#32;cool&#32;site>
+<link rel="stylesheet" href="/css/index.css" media="all">
+<link rel="stylesheet" href="/css/projects.css" media="all">
+
+
+<script defer src="/fontawesome-5/all-5.15.4.js"></script>
+
+  <title>
+Profile
+
+  </title>
 </head>
-<body>
-    hi
+
+<body class="light">
+  
+  
+<script>
+    let localStorageValue = localStorage.getItem("pref-theme");
+    let mediaQuery = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    switch (localStorageValue) {
+        case "dark":
+            document.body.classList.add('dark');
+            break;
+        case "light":
+            document.body.classList.remove('dark');
+            break;
+        default:
+            if (mediaQuery) {
+                document.body.classList.add('dark');
+            }
+            break;
+    }
+</script>
+
+
+
+<header>
+    <nav class="pt-3 navbar navbar-expand-lg animate">
+        <div class="container-fluid mx-xs-2 mx-sm-5 mx-md-5 mx-lg-5">
+            
+            <a class="navbar-brand primary-font text-wrap" href="/">
+                
+                <img src="/fav.png" width="30" height="30"
+                    class="d-inline-block align-top">
+                Profile
+                
+            </a>
+
+            
+
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <svg aria-hidden="true" height="24" viewBox="0 0 16 16" version="1.1" width="24" data-view-component="true">
+                    <path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path>
+                </svg>
+            </button>
+
+            
+            <div class="collapse navbar-collapse text-wrap primary-font" id="navbarContent">
+                <ul class="navbar-nav ms-auto text-center">
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#about" aria-label="about">
+                            About Me
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#experience"
+                            aria-label="experience">
+                            Experience
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#education"
+                            aria-label="education">
+                            Education
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#projects"
+                            aria-label="projects">
+                            Projects
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#achievements"
+                            aria-label="achievements">
+                            Achievements
+                        </a>
+                    </li>
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        <a class="nav-link" href="/#contact"
+                            aria-label="contact">
+                            Contact
+                        </a>
+                    </li>
+                    
+
+                    
+                    
+
+                    
+                    <li class="nav-item navbar-text">
+                        
+                        <div class="text-center">
+                            <button id="theme-toggle">
+                                <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                </svg>
+                                <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="5"></circle>
+                                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </li>
+                    
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<div id="content">
+<section id="hero" class="py-5 align-middle">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5 pt-lg-3">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8 content animate" id="primary-font">
+                <span class="subtitle">
+                    Hi, my name is
+                </span>
+                <h2>
+                    Shashwath.
+                </h2>
+                <h3 style="font-size: 300%;">
+                    Transfroming data into intelligence
+                </h3>
+                <p class="hero-content">
+                    Exploring the intricate world of software engineering and machine learning. Here, I blend creativity with technology to shape a future where data informs decision-making.
+                </p>
+                <div class="row">
+                    <div class="col-auto h-100">
+                        
+                        <a href="https://drive.google.com/file/d/1AtB_WyHhlqp3-mZS2b41wgolpFZbWe8r/view?usp=drive_link" class="btn" ZgotmplZ
+			  
+                          target="_blank"
+                          >
+                            Resume
+                        </a>
+                        
+                    </div>
+                    <div class="col-auto px-0 h-100"><span>
+    
+    <span class="px-1">
+        <a href="https://github.com/shashwath-kumar/" target="_blank" class="btn social-icon">
+            <i class="fab fa-github"></i>
+        </a>
+    </span>
+    
+    <span class="px-1">
+        <a href="https://www.linkedin.com/in/shashwath-kumar/" target="_blank" class="btn social-icon">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </span>
+    
+
+    
+</span></div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-9 pt-5 image animate px-5 px-md-5 px-lg-0 text-center">
+                        <img src="/images/pfp.png"
+                            class="img-thumbnail mx-auto rounded-circle"
+                            alt=""
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section id="about" class="py-0 py-sm-5">
+    <div class="container bg-transparent">
+        <h3 class="text-center bg-transparent">About Me</h3>
+        <div class="bg-transparent row justify-content-center px-3 py-5">
+            
+            <div class="col-sm-12 col-md-12 col-lg-8 content" align="justify">
+                <p>As a motivated Computer Science graduate student, I am currently advancing my understanding of software engineering and machine learning, simultaneously working on research projects in the domain of Large Language Models (LLMs) under the guidance of my mentor. My academic and research journey has equipped me with a solid foundation in a variety of programming languages, frameworks, and machine learning algorithms.</p>
+<p>I am currently working on a research project to build a new dataset that can be used to benchmark LLMs.</p>
+
+
+                
+                
+                <ul>
+                    
+                    <li style="width:max-content;"><strong>Languages:</strong> Python, C++ 21, Jasva, SQL, JavaScript, Bash</li><br>
+                    
+                    <li style="width:max-content;"><strong>Libraries:</strong> .NET, Django, PyTorch, Scikit-learn, TensorFlow, OpenCV</li><br>
+                    
+                    <li style="width:max-content;"><strong>Tools:</strong> Git, Docker, AWS, Azure, Jenkins</li><br>
+                    
+                    <li style="width:max-content;"><strong>Databases:</strong> PostgreSQL, MySQL, Hadoop, Apache Spark</li><br>
+                    
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Experience</h3>
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-md-8 col-lg-8 py-5">
+                <div class="experience-container px-3 pt-2">
+                    <ul class="nav nav-pills mb-3 bg-transparent primary-font" id="pills-tab" role="tablist">
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link active bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Rutgers-Jun-2023---Present-tab'
+                                data-bs-target='#pills-Rutgers-Jun-2023---Present'
+                                aria-controls='Rutgers-Jun-2023---Present' 
+                            >
+                                Rutgers
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Soroco-Nov-2021---Jul-2022-tab'
+                                data-bs-target='#pills-Soroco-Nov-2021---Jul-2022' 
+                                aria-controls='Soroco-Nov-2021---Jul-2022'
+                            >
+                                Soroco
+                            </div>
+                        </li>
+                        
+                        
+                        
+                        <li class="nav-item px-1 bg-transparent" role="presentation">
+                            <div 
+                                class="nav-link bg-transparent" 
+                                aria-selected="true" 
+                                role="tab" 
+                                data-bs-toggle="pill"
+                                id='Soroco-May-2021---Jul-2021-tab'
+                                data-bs-target='#pills-Soroco-May-2021---Jul-2021' 
+                                aria-controls='Soroco-May-2021---Jul-2021'
+                            >
+                                Soroco
+                            </div>
+                        </li>
+                        
+                        
+                    </ul>
+                    <div class="tab-content pb-5 pt-2 bg-transparent primary-font" id="pills-tabContent">
+                        
+                        
+                        <div 
+                            class="tab-pane fade show active bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Rutgers-Jun-2023---Present'
+                            aria-labelledby='pills-Rutgers-Jun-2023---Present-tab'
+                        >
+                            <div>
+                                <span class="h4">Research Assistant</span>
+                                <small>-</small>
+                                <a href="https://www.cs.rutgers.edu" target="_blank">Rutgers</a>
+                                <div class="pb-1">
+                                    <small>Jun 2023 - Present</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Working&#32;as&#32;a&#32;Research&#32;Assistant&#32;at&#32;Rutgers
+                                        >
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+
+                                
+                            </div>
+
+                            <ul>
+<li>Working on a research project to benchmark LLMs on a novel dataset.</li>
+<li>The dataset is generated from synthetic data created from GPT 4.</li>
+</ul>
+
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Soroco-Nov-2021---Jul-2022'
+                            aria-labelledby='pills-Soroco-Nov-2021---Jul-2022-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineer</span>
+                                <small>-</small>
+                                <a href="https://www.soroco.com" target="_blank">Soroco</a>
+                                
+                                <div class="pb-1">
+                                    <small>Nov 2021 - Jul 2022</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Software&#32;Engineer&#32;at&#32;Soroco
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Successfully led the conversion of a C++ codebase from a serial architecture to a highly efficient parallel architecture, resulting in a remarkable performance boost of approximately <strong>100 - 150%</strong>.</li>
+<li>Developed a comprehensive library within the .NET Framework, seamlessly bridging native and managed code and facilitating efficient communication between different components of the application.</li>
+<li>Played a key role in enhancing data quality on the server-side Python infrastructure, implementing robust mechanisms to ensure reliable and accurate data processing.</li>
+<li>Actively contributed to Agile/Scrum meetings and diligently participated in code reviews, fostering a culture of excellence in code quality and ensuring timely delivery of tasks.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div 
+                            class="tab-pane fade bg-transparent" 
+                            role="tabpanel"
+                            id='pills-Soroco-May-2021---Jul-2021'
+                            aria-labelledby='pills-Soroco-May-2021---Jul-2021-tab'
+                        >
+                            <div>
+                                <span class="h4">Software Engineer Intern</span>
+                                <small>-</small>
+                                <a href="https://www.soroco.com" target="_blank">Soroco</a>
+                                
+                                <div class="pb-1">
+                                    <small>May 2021 - Jul 2021</small>
+                                    
+                                    <span class="p-2">
+                                        <span 
+                                            style="cursor: pointer;" 
+                                            data-bs-toggle="tooltip" 
+                                            data-bs-placement="top" 
+                                            data-bs-original-title=Worked&#32;as&#32;a&#32;Software&#32;Engineer&#32;Intern&#32;at&#32;Soroco
+                                        > 
+                                            <i class="fas fa-info-circle fa-xs"></i>
+                                        </span>
+                                    </span>
+                                    
+                                </div>
+                                
+                                
+                                <div class="py-2 featuredLink">
+                                    <a class="p-2 px-4 btn btn-outline-primary btn-sm" href=https://drive.google.com/file/d/17x3EEvSxjXGjtDaX8_MZTUIJyhuge6D9/view?usp&#61;sharing target="_blank">
+                                        Internship report 
+                                    </a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="pt-2">
+                                <ul>
+<li>Developed a robust foundation framework for the cutting-edge R&amp;D project, &ldquo;Computer Vision to Augment API-based Screen Scraping,&rdquo; leveraging PyTorch and OpenCV.</li>
+<li>Successfully implemented advanced techniques to accurately identify on-screen graphical user interface (GUI) elements through the analysis of screenshots.</li>
+<li>Pioneered an innovative data collection approach, serving as a powerful alternative to traditional methods, and significantly enhancing downstream analysis capabilities.</li>
+<li>Delivered an engaging and informative tech talk to the entire company, showcasing the groundbreaking features and potential of the developed framework.</li>
+</ul>
+
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="education" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Education</h3>
+        <div class="row justify-content-center py-5">
+            
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2022 - 2024</small>
+                                </div>
+                                <h5 class="card-title">Master of Science in Computer Science</h5>
+                                
+                                
+                                <a href="https://www.rutgers.edu" target="_blank">
+                                    <h6>
+                                    Rutgers, The State University of New Jersey
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>3.7 out of 4</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Extracurricular Activities</p>
+<ul>
+<li>Participated in reading groups on recent AI/ML advances.</li>
+<li>Participated in a Kaggle competition and bagged a cash prize.</li>
+<li>Participated in rock climbing events.</li>
+</ul>
+
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 p-0">
+                <div class="row row align-items-center justify-content-center m-1 mb-4">
+                    
+
+                    <div class="col-md-9">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="float-end">
+                                    <small>2018 - 2022</small>
+                                </div>
+                                <h5 class="card-title">Bachelor of Science in Computer Science</h5>
+                                
+                                
+                                <a href="https://www.pes.edu" target="_blank">
+                                    <h6>
+                                    PES University
+                                    </h6>
+                                </a>
+                                
+
+                                
+                                <div class="py-1">
+                                    GPA:
+                                    <i>
+                                        <small>8.7 out of 10</small>
+                                    </i> 
+                                </div>
+                                
+                                <div class="py-1 education-content">
+                                    <p>Specialized in Machine Intelligence and Data Science.</p>
+<p>I Published one paper in <a href="https://ieeexplore.ieee.org/servlet/opac?punumber=9823959">I2CT conference</a>.</p>
+<ul>
+<li>Paper: <a href="https://ieeexplore.ieee.org/document/9824226">Signed English Recognition with Spatio-Temporal Graphs and Language Modelling</a></li>
+<li>Sign Language Recognition using Attention Graph Networks and Language Models.</li>
+</ul>
+<p>Extracurricular Activities</p>
+<ul>
+<li>Participated in various hackthons and coding events.</li>
+<li>Got 17th place in an All-India CTF hackathon and bagged a cash prize.</li>
+</ul>
+
+                                </div>
+
+                                
+                                <div class="py-1">
+                                    <a href="https://drive.google.com/file/d/1h5QTKBr1lqcygnTdQAS61Cx1peaPFFqO/view?usp=sharing" target="_blank" class="btn">
+                                        Official Transcript
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Projects</h3>
+        <div class="row justify-content-center px-3 px-md-5">
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Question Generation by Asking Questions">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/QG.png" alt="Question Generation by Asking Questions">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Quesiton Answering</span>
+                            
+                            <span class="badge badge-secondary">Question Generation</span>
+                            
+                            <span class="badge badge-secondary">Knowledge Distillation</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Question Generation by Asking Questions</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            An unofficial implementation of the paper: Learning to Generate Question by Asking Question: A Primal-Dual Approach with Uncommon Word Generation
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Shashwath-kumar/Question-Generation-by-Asking-Questions" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/Shashwath-kumar/Question-Generation-by-Asking-Questions" target="_blank">
+                                Repo
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="ViLT for GQA">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/ViLT.png" alt="ViLT for GQA">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Computer Vision</span>
+                            
+                            <span class="badge badge-secondary">NLP</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">ViLT for GQA</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            Fintuned the ViLT model on GQA dataset. Open source contribution for a project in my grad course.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/keshavshivkumar/ViLT" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://github.com/keshavshivkumar/ViLT" target="_blank">
+                                Repo
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 my-3">
+                <div class="card my-3 h-100" title="Sign Language Recognition with Language Modelling">
+                    <div class="card-head">
+                        <img class="card-img-top" src="/images/slr.png" alt="Sign Language Recognition with Language Modelling">
+                    </div>
+                    <div class="card-body bg-transparent p-3">
+                        <div class="pb-2 bg-transparent">
+                            
+                            <span class="badge badge-secondary">Research</span>
+                            
+                            <span class="badge badge-secondary">Computer Vision</span>
+                            
+                            <span class="badge badge-secondary">Language Modelling</span>
+                            
+                        </div>
+                        <h5 class="card-title bg-transparent mt-1">Sign Language Recognition with Language Modelling</h5>
+                        <div class="card-text bg-transparent secondary-font">
+                            A research paper on including Language Models alongside with Sign Language Recognition.
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer py-3">
+                        
+                        <span class="m-1 mx-2">
+                            <a href="https://github.com/Shashwath-kumar/Signed-Language-Recognition-with-NLP" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </span>
+                        
+                        
+                        <span class="float-end">
+                            <a class="btn btn-sm" href="https://ieeexplore.ieee.org/document/9824226" target="_blank">
+                                Paper
+                            </a>
+                        </span>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</section>
+
+<section id="achievements" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Achievements</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-3 px-md-5 px-lg-5">
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <a class="card my-3 h-100 p-3" href="https://drive.google.com/file/d/178iuhFpSet_JELGsnzFTU6UJ3r-y3TEk/view?usp=drive_link" title="All India CTF hackathon." target="_blank">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">All India CTF hackathon.</h5>
+                            <div class="card-text secondary-font">
+                                Won 17th place in ISFCR CTF Hackathon 2021. Bagged a cash prize.
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="Merit Scholarships">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">Merit Scholarships</h5>
+                            <div class="card-text secondary-font">
+                                Scholarships recieved during all my years in undergrad for being in a high percentile.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="col-lg-4 col-md-6 my-3">
+                    <div class="card my-3 h-100 p-3" title="SIH Hackathon 2020">
+                        <div class="card-body bg-transparent">
+                            <h5 class="card-title bg-transparent">SIH Hackathon 2020</h5>
+                            <div class="card-text secondary-font">
+                                Qualified for the biggest hackathon in India for a solution in academics.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="py-5">
+    <div class="container">
+        <h3 class="text-center">Get in Touch</h3>
+        <div class="px-0 px-md-5 px-lg-5">
+            <div class="row justify-content-center px-md-5">
+                <div class="col-md-8 py-3">
+                    <div class="text-center">
+                        My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+                    </div>
+                    
+                    <div class="text-center pt-3">
+                        <a href="mailto:shashwath457@gmail.com" class="btn">
+                            Mail me
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact-form-status"></div>
+</section>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+  </div><footer>
+    <div class="container py-3" id="recent-posts">
+    
+</div><div class="text-center pt-2">
+    
+
+    
+
+    
+
+    
+
+    
+</div><div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-md-4 text-center">
+            
+            &copy; 2023  All rights reserved
+            <div class="text-secondary">
+                Made with
+                <span class="text-danger">
+                    &#10084;
+                </span>
+                and
+                <a href="https://github.com/gurusabarish/hugo-profile" target="_blank"
+                    title="Designed and developed by gurusabarish">
+                    Hugo Profile
+                </a>
+            </div>
+        </div>
+    </div>
+</div></footer><script src="/bootstrap-5/js/bootstrap.bundle.min.js"></script>
+<script>
+    if (document.body.className.includes("dark")) {
+        document.body.classList.remove('dark');
+        localStorage.setItem("pref-theme", 'light');
+    }
+</script>
+
+
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+
+</script>
+
+
+
+
+
+
+
+
+
+  <section id="search-content" class="py-2">
+    <div class="container" id="search-results"></div>
+  </section>
 </body>
+
 </html>
